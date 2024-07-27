@@ -16,23 +16,24 @@
      <!-- container for input -->
       <div class="container" id="container">
         <div class="input-container" id="input-container">
-            <form action="" class="form" id="countdownForm">
+            <form  class="form" id="countdownForm">
                 <h1>CREATE A CUSTOM COUNTDOWN</h1>
                 <label for="title">Title</label>
                 <input type="text" id="title" placeholder="what are you counting down to? ">
                 <label for="date-picker">Select a Date</label>
                 <input type="date" class="date-picker" id="date-picker">
+                <button type="submit">Submit</button>
             </form>
-            <button type="submit">Submit</button>
+            
         </div>
         <!-- countdown -->
         <div class="countdown" id="countdown" hidden>
             <h1 id="countdown-title">countdown start here.</h1>
             <ul>
-                <li><span>3</span>days</li>
-                <li><span>2</span>hours</li>
-                <li><span>32</span>minutes</li>
-                <li><span>12</span>seconds</li>
+                <li><span></span>days</li>
+                <li><span></span>hours</li>
+                <li><span></span>minutes</li>
+                <li><span></span>seconds</li>
             </ul>
             <button id="countdown-button">Reset</button>
         </div>
@@ -40,7 +41,7 @@
         <!-- complete -->
         <div class="complete" id="complete" hidden>
             <h1 class="complete-title">Countdown Completed!</h1>
-            <h1 class="complete-info">football match </h1>
+            <h1 id="complete-info"> </h1>
             <button id="complete-button">New Countdown</button>
         </div>
       </div>
